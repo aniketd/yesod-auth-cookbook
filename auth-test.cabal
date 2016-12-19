@@ -1,30 +1,41 @@
-name:              tmp
-version:           0.0.0
-cabal-version:     >= 1.8
-build-type:        Simple
+name:                auth-test
+version:             0.1.0.0
+synopsis:            Simple project template from stack
+description:         Please see README.md
+homepage:            https://github.com/githubuser/auth-test#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2016 Author name here
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
 
-executable         tmp
-    hs-source-dirs: .
-    exposed-modules: Main
+executable auth-test
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
 
-    extensions: TemplateHaskell
-                QuasiQuotes
-                OverloadedStrings
-                NoImplicitPrelude
-                MultiParamTypeClasses
-                TypeFamilies
-                GADTs
-                GeneralizedNewtypeDeriving
-                FlexibleContexts
-                FlexibleInstances
-                EmptyDataDecls
-                NoMonomorphismRestriction
-                DeriveDataTypeable
-                ViewPatterns
-                TupleSections
-                RecordWildCards
+  extensions: TemplateHaskell
+              QuasiQuotes
+              OverloadedStrings
+              NoImplicitPrelude
+              MultiParamTypeClasses
+              TypeFamilies
+              GADTs
+              GeneralizedNewtypeDeriving
+              FlexibleContexts
+              FlexibleInstances
+              EmptyDataDecls
+              NoMonomorphismRestriction
+              DeriveDataTypeable
+              ViewPatterns
+              TupleSections
+              RecordWildCards
 
-    build-depends: base                          >= 4          && < 5
+  build-depends:       base >= 4.7 && < 5
                  , yesod                         >= 1.4.3      && < 1.5
                  , yesod-core                    >= 1.4.17     && < 1.5
                  , yesod-auth                    >= 1.4.0      && < 1.5
@@ -64,5 +75,3 @@ executable         tmp
                  , double-conversion
                  , mime-mail
                  , blaze-html
-
-
