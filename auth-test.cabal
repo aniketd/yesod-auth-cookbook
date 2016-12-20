@@ -5,9 +5,9 @@ description:         Please see README.md
 homepage:            https://github.com/githubuser/auth-test#readme
 license:             BSD3
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2016 Author name here
+author:              Sibi Prabhakaran
+maintainer:          anicake@gmail.com
+copyright:           2016 Sibi Prabhakaran
 category:            Web
 build-type:          Simple
 cabal-version:       >=1.10
